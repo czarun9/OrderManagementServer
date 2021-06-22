@@ -1,0 +1,163 @@
+2021-06-22 20:06:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "CREATE TABLE ORDER[*] (ID VARCHAR(255) NOT NULL, TABLE_NO INTEGER, PRIMARY KEY (ID))"; oczekiwano "identifier"
+Syntax error in SQL statement "CREATE TABLE ORDER[*] (ID VARCHAR(255) NOT NULL, TABLE_NO INTEGER, PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
+create table order (id varchar(255) not null, table_no integer, primary key (id)) [42001-200]
+2021-06-22 20:06:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "ALTER TABLE ORDER_ORDER_POSITION_LIST ADD CONSTRAINT FKSVQ17NYHNGWGJDFRT7HISGO3N FOREIGN KEY (ORDER_ID) REFERENCES ORDER[*]"; oczekiwano "identifier"
+Syntax error in SQL statement "ALTER TABLE ORDER_ORDER_POSITION_LIST ADD CONSTRAINT FKSVQ17NYHNGWGJDFRT7HISGO3N FOREIGN KEY (ORDER_ID) REFERENCES ORDER[*]"; expected "identifier"; SQL statement:
+alter table order_order_position_list add constraint FKsvq17nyhngwgjdfrt7hisgo3n foreign key (order_id) references order [42001-200]
+2021-06-22 20:06:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "ALTER TABLE ORDER_POSITION ADD CONSTRAINT FKCK4P4API7T0QVAL1NA1YM8YOE FOREIGN KEY (ORDER_ID) REFERENCES ORDER[*]"; oczekiwano "identifier"
+Syntax error in SQL statement "ALTER TABLE ORDER_POSITION ADD CONSTRAINT FKCK4P4API7T0QVAL1NA1YM8YOE FOREIGN KEY (ORDER_ID) REFERENCES ORDER[*]"; expected "identifier"; SQL statement:
+alter table order_position add constraint FKck4p4api7t0qval1na1ym8yoe foreign key (order_id) references order [42001-200]
+2021-06-22 20:08:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "CREATE TABLE ORDER[*] (ID VARCHAR(255) NOT NULL, TABLE_NO INTEGER, PRIMARY KEY (ID))"; oczekiwano "identifier"
+Syntax error in SQL statement "CREATE TABLE ORDER[*] (ID VARCHAR(255) NOT NULL, TABLE_NO INTEGER, PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
+create table order (id varchar(255) not null, table_no integer, primary key (id)) [42001-200]
+2021-06-22 20:08:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "CREATE TABLE ORDER[*] POSITION (ID VARCHAR(255) NOT NULL, DISH_ID VARCHAR(255), ORDER_ID VARCHAR(255), PRIMARY KEY (ID))"; oczekiwano "identifier"
+Syntax error in SQL statement "CREATE TABLE ORDER[*] POSITION (ID VARCHAR(255) NOT NULL, DISH_ID VARCHAR(255), ORDER_ID VARCHAR(255), PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
+create table order position (id varchar(255) not null, dish_id varchar(255), order_id varchar(255), primary key (id)) [42001-200]
+2021-06-22 20:08:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "ALTER TABLE DISH_ORDER_POSITION_LIST ADD CONSTRAINT FKG1YOHYE3N8FH25EEOJ8SJ0A31 FOREIGN KEY (ORDER_POSITION_LIST_ID) REFERENCES ORDER[*] POSITION"; oczekiwano "identifier"
+Syntax error in SQL statement "ALTER TABLE DISH_ORDER_POSITION_LIST ADD CONSTRAINT FKG1YOHYE3N8FH25EEOJ8SJ0A31 FOREIGN KEY (ORDER_POSITION_LIST_ID) REFERENCES ORDER[*] POSITION"; expected "identifier"; SQL statement:
+alter table dish_order_position_list add constraint FKg1yohye3n8fh25eeoj8sj0a31 foreign key (order_position_list_id) references order position [42001-200]
+2021-06-22 20:08:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "ALTER TABLE ORDER[*] POSITION ADD CONSTRAINT FK385HPEYHWH3O59CAUG49SPX32 FOREIGN KEY (DISH_ID) REFERENCES DISH"; oczekiwano "identifier"
+Syntax error in SQL statement "ALTER TABLE ORDER[*] POSITION ADD CONSTRAINT FK385HPEYHWH3O59CAUG49SPX32 FOREIGN KEY (DISH_ID) REFERENCES DISH"; expected "identifier"; SQL statement:
+alter table order position add constraint FK385hpeyhwh3o59caug49spx32 foreign key (dish_id) references dish [42001-200]
+2021-06-22 20:08:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "ALTER TABLE ORDER[*] POSITION ADD CONSTRAINT FK3LOEJ8V90BVEWFMUQ83X3K34 FOREIGN KEY (ORDER_ID) REFERENCES ORDER"; oczekiwano "identifier"
+Syntax error in SQL statement "ALTER TABLE ORDER[*] POSITION ADD CONSTRAINT FK3LOEJ8V90BVEWFMUQ83X3K34 FOREIGN KEY (ORDER_ID) REFERENCES ORDER"; expected "identifier"; SQL statement:
+alter table order position add constraint FK3loej8v90bvewfmuq83x3k34 foreign key (order_id) references order [42001-200]
+2021-06-22 20:08:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "ALTER TABLE ORDER_ORDER_POSITION_LIST ADD CONSTRAINT FK118UTK5FO5AQ8VPS2UYIOLIRJ FOREIGN KEY (ORDER_POSITION_LIST_ID) REFERENCES ORDER[*] POSITION"; oczekiwano "identifier"
+Syntax error in SQL statement "ALTER TABLE ORDER_ORDER_POSITION_LIST ADD CONSTRAINT FK118UTK5FO5AQ8VPS2UYIOLIRJ FOREIGN KEY (ORDER_POSITION_LIST_ID) REFERENCES ORDER[*] POSITION"; expected "identifier"; SQL statement:
+alter table order_order_position_list add constraint FK118utk5fo5aq8vps2uyiolirj foreign key (order_position_list_id) references order position [42001-200]
+2021-06-22 20:08:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "ALTER TABLE ORDER_ORDER_POSITION_LIST ADD CONSTRAINT FKSVQ17NYHNGWGJDFRT7HISGO3N FOREIGN KEY (ORDER_ID) REFERENCES ORDER[*]"; oczekiwano "identifier"
+Syntax error in SQL statement "ALTER TABLE ORDER_ORDER_POSITION_LIST ADD CONSTRAINT FKSVQ17NYHNGWGJDFRT7HISGO3N FOREIGN KEY (ORDER_ID) REFERENCES ORDER[*]"; expected "identifier"; SQL statement:
+alter table order_order_position_list add constraint FKsvq17nyhngwgjdfrt7hisgo3n foreign key (order_id) references order [42001-200]
+2021-06-22 20:11:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "DROP TABLE IF EXISTS ORDER[*] CASCADE "; oczekiwano "identifier"
+Syntax error in SQL statement "DROP TABLE IF EXISTS ORDER[*] CASCADE "; expected "identifier"; SQL statement:
+drop table if exists order CASCADE  [42001-200]
+2021-06-22 20:11:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "DROP TABLE IF EXISTS ORDER[*] POSITION CASCADE "; oczekiwano "identifier"
+Syntax error in SQL statement "DROP TABLE IF EXISTS ORDER[*] POSITION CASCADE "; expected "identifier"; SQL statement:
+drop table if exists order position CASCADE  [42001-200]
+2021-06-22 20:11:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "CREATE TABLE ORDER[*] (ID VARCHAR(255) NOT NULL, TABLE_NO INTEGER, PRIMARY KEY (ID))"; oczekiwano "identifier"
+Syntax error in SQL statement "CREATE TABLE ORDER[*] (ID VARCHAR(255) NOT NULL, TABLE_NO INTEGER, PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
+create table order (id varchar(255) not null, table_no integer, primary key (id)) [42001-200]
+2021-06-22 20:11:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "CREATE TABLE ORDER[*] POSITION (ID VARCHAR(255) NOT NULL, DISH_ID VARCHAR(255), ORDER_ID VARCHAR(255), PRIMARY KEY (ID))"; oczekiwano "identifier"
+Syntax error in SQL statement "CREATE TABLE ORDER[*] POSITION (ID VARCHAR(255) NOT NULL, DISH_ID VARCHAR(255), ORDER_ID VARCHAR(255), PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
+create table order position (id varchar(255) not null, dish_id varchar(255), order_id varchar(255), primary key (id)) [42001-200]
+2021-06-22 20:11:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "ALTER TABLE DISH_ORDER_POSITION_LIST ADD CONSTRAINT FKG1YOHYE3N8FH25EEOJ8SJ0A31 FOREIGN KEY (ORDER_POSITION_LIST_ID) REFERENCES ORDER[*] POSITION"; oczekiwano "identifier"
+Syntax error in SQL statement "ALTER TABLE DISH_ORDER_POSITION_LIST ADD CONSTRAINT FKG1YOHYE3N8FH25EEOJ8SJ0A31 FOREIGN KEY (ORDER_POSITION_LIST_ID) REFERENCES ORDER[*] POSITION"; expected "identifier"; SQL statement:
+alter table dish_order_position_list add constraint FKg1yohye3n8fh25eeoj8sj0a31 foreign key (order_position_list_id) references order position [42001-200]
+2021-06-22 20:11:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "ALTER TABLE ORDER[*] POSITION ADD CONSTRAINT FK385HPEYHWH3O59CAUG49SPX32 FOREIGN KEY (DISH_ID) REFERENCES DISH"; oczekiwano "identifier"
+Syntax error in SQL statement "ALTER TABLE ORDER[*] POSITION ADD CONSTRAINT FK385HPEYHWH3O59CAUG49SPX32 FOREIGN KEY (DISH_ID) REFERENCES DISH"; expected "identifier"; SQL statement:
+alter table order position add constraint FK385hpeyhwh3o59caug49spx32 foreign key (dish_id) references dish [42001-200]
+2021-06-22 20:11:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "ALTER TABLE ORDER[*] POSITION ADD CONSTRAINT FK3LOEJ8V90BVEWFMUQ83X3K34 FOREIGN KEY (ORDER_ID) REFERENCES ORDER"; oczekiwano "identifier"
+Syntax error in SQL statement "ALTER TABLE ORDER[*] POSITION ADD CONSTRAINT FK3LOEJ8V90BVEWFMUQ83X3K34 FOREIGN KEY (ORDER_ID) REFERENCES ORDER"; expected "identifier"; SQL statement:
+alter table order position add constraint FK3loej8v90bvewfmuq83x3k34 foreign key (order_id) references order [42001-200]
+2021-06-22 20:11:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "ALTER TABLE ORDER_ORDER_POSITION_LIST ADD CONSTRAINT FK118UTK5FO5AQ8VPS2UYIOLIRJ FOREIGN KEY (ORDER_POSITION_LIST_ID) REFERENCES ORDER[*] POSITION"; oczekiwano "identifier"
+Syntax error in SQL statement "ALTER TABLE ORDER_ORDER_POSITION_LIST ADD CONSTRAINT FK118UTK5FO5AQ8VPS2UYIOLIRJ FOREIGN KEY (ORDER_POSITION_LIST_ID) REFERENCES ORDER[*] POSITION"; expected "identifier"; SQL statement:
+alter table order_order_position_list add constraint FK118utk5fo5aq8vps2uyiolirj foreign key (order_position_list_id) references order position [42001-200]
+2021-06-22 20:11:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "ALTER TABLE ORDER_ORDER_POSITION_LIST ADD CONSTRAINT FKSVQ17NYHNGWGJDFRT7HISGO3N FOREIGN KEY (ORDER_ID) REFERENCES ORDER[*]"; oczekiwano "identifier"
+Syntax error in SQL statement "ALTER TABLE ORDER_ORDER_POSITION_LIST ADD CONSTRAINT FKSVQ17NYHNGWGJDFRT7HISGO3N FOREIGN KEY (ORDER_ID) REFERENCES ORDER[*]"; expected "identifier"; SQL statement:
+alter table order_order_position_list add constraint FKsvq17nyhngwgjdfrt7hisgo3n foreign key (order_id) references order [42001-200]
+2021-06-22 20:12:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "DROP TABLE IF EXISTS ORDER[*] CASCADE "; oczekiwano "identifier"
+Syntax error in SQL statement "DROP TABLE IF EXISTS ORDER[*] CASCADE "; expected "identifier"; SQL statement:
+drop table if exists order CASCADE  [42001-200]
+2021-06-22 20:12:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "CREATE TABLE ORDER[*] (ID VARCHAR(255) NOT NULL, TABLE_NO INTEGER, PRIMARY KEY (ID))"; oczekiwano "identifier"
+Syntax error in SQL statement "CREATE TABLE ORDER[*] (ID VARCHAR(255) NOT NULL, TABLE_NO INTEGER, PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
+create table order (id varchar(255) not null, table_no integer, primary key (id)) [42001-200]
+2021-06-22 20:12:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "ALTER TABLE ORDER_ORDER_POSITION_LIST ADD CONSTRAINT FKSVQ17NYHNGWGJDFRT7HISGO3N FOREIGN KEY (ORDER_ID) REFERENCES ORDER[*]"; oczekiwano "identifier"
+Syntax error in SQL statement "ALTER TABLE ORDER_ORDER_POSITION_LIST ADD CONSTRAINT FKSVQ17NYHNGWGJDFRT7HISGO3N FOREIGN KEY (ORDER_ID) REFERENCES ORDER[*]"; expected "identifier"; SQL statement:
+alter table order_order_position_list add constraint FKsvq17nyhngwgjdfrt7hisgo3n foreign key (order_id) references order [42001-200]
+2021-06-22 20:12:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "ALTER TABLE ORDERPOSITION ADD CONSTRAINT FK18GTJHKUTVLORUYUOSM13DXH7 FOREIGN KEY (ORDER_ID) REFERENCES ORDER[*]"; oczekiwano "identifier"
+Syntax error in SQL statement "ALTER TABLE ORDERPOSITION ADD CONSTRAINT FK18GTJHKUTVLORUYUOSM13DXH7 FOREIGN KEY (ORDER_ID) REFERENCES ORDER[*]"; expected "identifier"; SQL statement:
+alter table orderposition add constraint FK18gtjhkutvloruyuosm13dxh7 foreign key (order_id) references order [42001-200]
+2021-06-22 20:14:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "DROP TABLE IF EXISTS ORDER[*] CASCADE "; oczekiwano "identifier"
+Syntax error in SQL statement "DROP TABLE IF EXISTS ORDER[*] CASCADE "; expected "identifier"; SQL statement:
+drop table if exists order CASCADE  [42001-200]
+2021-06-22 20:14:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Błąd składniowy w wyrażeniu SQL "CREATE TABLE ORDER[*] (ID VARCHAR(255) NOT NULL, TABLE_NO INTEGER, PRIMARY KEY (ID))"; oczekiwano "identifier"
+Syntax error in SQL statement "CREATE TABLE ORDER[*] (ID VARCHAR(255) NOT NULL, TABLE_NO INTEGER, PRIMARY KEY (ID))"; expected "identifier"; SQL statement:
+create table order (id varchar(255) not null, table_no integer, primary key (id)) [42001-200]
+2021-06-22 21:17:17 database: wrong user or password; user: "PWSI"
+org.h2.message.DbException: Nieprawidłowy użytkownik/hasło
+Wrong user name or password [28000-200]
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.message.DbException.get(DbException.java:170)
+	at org.h2.engine.Engine.openSession(Engine.java:131)
+	at org.h2.engine.Engine.openSession(Engine.java:192)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:171)
+	at org.h2.engine.Engine.createSession(Engine.java:166)
+	at org.h2.engine.Engine.createSession(Engine.java:29)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:340)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:152)
+	at org.h2.Driver.connect(Driver.java:69)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:309)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:289)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:785)
+	at org.h2.server.web.WebApp.login(WebApp.java:1008)
+	at org.h2.server.web.WebApp.process(WebApp.java:223)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:173)
+	at org.h2.server.web.WebServlet.doGet(WebServlet.java:129)
+	at org.h2.server.web.WebServlet.doPost(WebServlet.java:166)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1707)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.h2.jdbc.JdbcSQLInvalidAuthorizationSpecException: Nieprawidłowy użytkownik/hasło
+Wrong user name or password [28000-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:461)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	... 55 more
