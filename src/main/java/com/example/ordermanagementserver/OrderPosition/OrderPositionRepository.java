@@ -3,5 +3,8 @@ package com.example.ordermanagementserver.OrderPosition;
 import com.example.ordermanagementserver.Order.Order;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface OrderPositionRepository extends JpaRepository<OrderPosition,String> {
+import java.util.List;
+
+public interface OrderPositionRepository extends JpaRepository<OrderPosition, String> {
+    List<OrderPosition> findByOrder(Order order);
 }

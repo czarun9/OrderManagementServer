@@ -21,7 +21,6 @@ public class OrderPosition {
     String id;
     Integer quantity;
 
-
     @ManyToOne
     @JoinColumn(name = "order_id", nullable = false)
     Order order;

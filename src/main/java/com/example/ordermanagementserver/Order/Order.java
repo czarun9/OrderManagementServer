@@ -21,6 +21,7 @@ public class Order {
     @GenericGenerator(name = "uuid", strategy = "uuid2")
     String id;
     Integer tableNo;
+    String status;
 
     @OneToMany
     List<OrderPosition> orderPositionList;
@@ -29,6 +30,7 @@ public class Order {
     public Order(Integer tableNo) {
         this.tableNo = tableNo;
         this.orderPositionList = new ArrayList<OrderPosition>();
+        this.status = "Przyjęto do realizacji";
     }
 
 }

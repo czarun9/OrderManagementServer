@@ -24,7 +24,7 @@ public class OrderPositionController {
         OrderPosition orderPosition = new OrderPosition();
 
         Order order = orderService.getOrder(orderPositionDTO.orderId);
-        Dish dish = dishService.getDish(orderPositionDTO.dishId);
+        Dish dish = dishService.getDish(orderPositionDTO.getDishDTO().getId());
 
         orderPosition.setOrder(order);
         orderPosition.setDish(dish);

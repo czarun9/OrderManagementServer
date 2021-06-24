@@ -1,5 +1,7 @@
 package com.example.ordermanagementserver.OrderPosition;
 
+import com.example.ordermanagementserver.Dish.Dish;
+import com.example.ordermanagementserver.Dish.DishDTO;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -11,6 +13,8 @@ import lombok.Setter;
 @AllArgsConstructor
 public class OrderPositionDTO {
     String orderId;
-    String dishId;
+    DishDTO dishDTO;
     Integer quantity;
+
+
 }
